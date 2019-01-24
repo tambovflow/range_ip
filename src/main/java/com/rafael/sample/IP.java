@@ -1,5 +1,7 @@
 package com.rafael.sample;
 
+import java.util.Arrays;
+
 public class IP {
     private int[] ip;
 
@@ -18,7 +20,7 @@ public class IP {
         this.ip = ip;
     }
 
-    public int getIpValue(){
-        return Integer.valueOf(""+ip[0]+ip[1]+ip[2]+ip[3]);
+    public Long getIpValue(){
+        return Long.valueOf(ip[0]+ "" +ip[1]+ip[2]+ip[3]);
     }
 }
